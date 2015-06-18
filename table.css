@@ -1,0 +1,49 @@
+
+
+
+#rounded-corner
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 5px;
+	width: 480px;
+	text-align: left;
+	border-collapse: collapse;  /*  bordur acoté de l'autre*/
+}
+#rounded-corner thead th.rounded-company
+{
+	background: #808484 url('table-images/left.png') left -1px no-repeat;
+}
+#rounded-corner thead th.rounded-q4
+{
+	background: #808484 url('table-images/right.png') right -1px no-repeat;
+}
+#rounded-corner th
+{
+	padding: 8px;
+	font-weight: normal;
+	font-size: 13px;
+	color: white;
+	background:   #999900;
+	text-align : center;
+}
+#rounded-corner td
+{
+	padding: 8px;
+	background: #C4C6C6;
+	border-top: 1px solid #fff;
+	color: #669;
+	text-align:center;
+}
+#rounded-corner tfoot td.rounded-foot-left
+{
+	background: #e8edff url('table-images/botleft.png') left bottom no-repeat;
+}
+#rounded-corner tfoot td.rounded-foot-right
+{
+	background: #e8edff url('table-images/botright.png') right bottom no-repeat;
+}
+#rounded-corner tbody tr:hover td
+{
+	background: #d0dafd;
+}

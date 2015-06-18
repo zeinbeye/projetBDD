@@ -1,0 +1,222 @@
+<html><head><title>Preview</title>
+<style type="text/css"><!--
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	font-size: 100%;
+	/*font-weight: bold;*/
+    background-color: #E0E0E0;
+	height : 930px;
+    background-attachment: fixed;
+	}
+
+h2 {
+	font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+img {
+    border: none;
+}
+option{
+width : 150px;
+}
+pre{
+text-align : left;
+font-family: verdana,sans-serif, Bodoni MT,Comic sans MS,tahoma;
+font-size: 15px;
+}
+
+.entete
+{
+height:165px;
+width:990px;
+border : 0px solid black;
+position : absolute;
+top : 5px;
+left : 54px;
+background-image: url(entete.png);
+background-color: #6699FF ;
+-moz-border-radius: 5px 5px;
+display: block;
+overflow: hidden;
+table-layout: fixed;
+}
+.defile {
+	display:block;
+    animation:linear marqueelike 20s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+    color: #FFFFFF;
+}
+@-moz-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+ }
+.ombre
+{
+height:160px;
+width:1040px;
+border : 0px solid black;
+position : absolute;
+top : 9px;
+left : 58px;
+background-color : gray;
+-moz-border-radius: 5px 5px;
+}
+.menu
+{
+height : 320px;
+width:172px;
+border : 0px solid black;
+position : absolute;
+top : 175px;
+left : 54px;
+background: url(tete.png) no-repeat;
+background-color: #6699FF;
+-moz-border-radius:10px 0px;
+}
+.corp
+{
+height:740px;
+width:870px;
+border : 0px inset black;
+position : absolute;
+top : 174px;
+left : 224px;
+
+padding-top:40px;
+-moz-border-radius:10px 10px;
+}
+.pied
+{
+height:40px;
+width:1045px;
+border : 0px solid black;
+position : absolute;
+top : 956px;
+left : 54px;
+color : gray;
+background-color : #3399FF;
+-moz-border-radius: 5px 5px;
+}
+.menu a
+{
+text-decoration : none;
+color : black;
+}
+    .connexion2 a
+{
+text-decoration : none;
+color : black;
+}
+.position_titre{
+position : relative;
+top : -11px;
+left : 165px;
+}
+.connexion2{
+height : 450px; position : absolute; width : 163px; top : 500px; left : 54px; padding-left : 10px;
+color : black;
+background: url(tete.png) no-repeat ;
+background-color: #6699FF ;
+}
+#monmenu {
+font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+font-size: 90%;
+font-weight:bold;
+}
+#monmenu ul ul {
+display: none;
+ position: absolute;
+ left: 154px; /* la position des sous menu par rapport a leurs menu superieur  */
+ top: -1px;
+ margin:0px;
+ padding: 0px;
+ border: 0px solid #FFFFFF;
+ }
+
+ #monmenu ul li a{
+ background: #F0F0FF;
+ padding: 2px 0 2px 10px;
+ margin-top:0px;
+margin-left:0px;
+display: block;
+ }
+
+ #monmenu ul li a:hover{
+background : #6699FF 0 -32px;
+ padding: 2px 0 2px 10px;
+}
+
+#monmenu li {
+ position: relative;
+ width: 160px;
+ background-color: #3300FF;
+ padding:  1px;
+ margin: 0px;
+ list-style-type: none;
+ }
+#monmenu li:hover {/*#monmenu li.sfhover*/
+background: #FF0033;
+}
+
+#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3{
+display: block;
+z-index :10;
+}
+/*#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4 {*/
+
+--></style>
+</head>
+<body>
+<a name="0"></a><body>Element body</body><br>
+<a name="1"></a><h2>Element h2</h2><br>
+<a name="2"></a><ul><li>Unordered List</li></ul><br>
+<a name="3"></a><img src="file://C:\Program Files\HTMLPad 2008\Image.gif"> Image<br>
+<a name="4"></a><select><option>List Item</option></select><br>
+<a name="5"></a><pre>Element pre</pre><br>
+<a name="6"></a><div class="entete">Class entete</div>
+<br>
+<a name="7"></a><div class="defile">Class defile</div>
+<br>
+<a name="8"></a><@-moz-keyframes marqueelike>Element @-moz-keyframes marqueelike</@-moz-keyframes marqueelike><br>
+<a name="9"></a><99 class="99%">Element 99, Class 99%</99><br>
+<a name="10"></a><div class="ombre">Class ombre</div>
+<br>
+<a name="11"></a><div class="menu">Class menu</div>
+<br>
+<a name="12"></a><div class="corp">Class corp</div>
+<br>
+<a name="13"></a><div class="pied">Class pied</div>
+<br>
+<a name="14"></a><div class="menu a">Class menu a</div>
+<br>
+<a name="15"></a><div class="connexion2 a">Class connexion2 a</div>
+<br>
+<a name="16"></a><div class="position_titre">Class position_titre</div>
+<br>
+<a name="17"></a><div class="connexion2">Class connexion2</div>
+<br>
+<a name="18"></a><div id="monmenu">ID monmenu</div>
+<a name="19"></a><div id="monmenu ul ul">ID monmenu ul ul</div>
+<a name="20"></a><div id="monmenu ul li a">ID monmenu ul li a</div>
+<a name="21"></a><div id="monmenu ul li a:hover">ID monmenu ul li a:hover</div>
+<a name="22"></a><div id="monmenu li">ID monmenu li</div>
+<a name="23"></a><div id="monmenu li:hover">ID monmenu li:hover</div>
+<a name="24"></a><div id="monmenu li:hover ul.niveau2">ID monmenu li:hover ul.niveau2</div>
+<a name="25"></a><div id="monmenu li li:hover ul.niveau3">ID monmenu li li:hover ul.niveau3</div>
+<a name="26"></a><div id="monmenu li:hover ul.niveau2">ID monmenu li:hover ul.niveau2</div>
+<a name="27"></a><div id="monmenu li li:hover ul.niveau3">ID monmenu li li:hover ul.niveau3</div>
+
+</body></html>

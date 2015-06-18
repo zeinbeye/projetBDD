@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Menu déroulant en CSS</title>
+<style type="text/css">
+#monmenu {
+font-family: trebuchet ms,arial,tahoma,verdana,sans-serif;
+font-size: 90%;
+font-weight:bold;
+}
+#monmenu ul ul {
+display: none;
+ position: absolute;
+ left: 164px;
+ top: -1px;
+ margin:0px;
+ padding: 0px;
+ border: 1px solid #B0B0B0;
+ }
+ #monmenu ul li a{
+ border: 1px solid #B0B0B0;
+ background:  url(menu4.gif);
+ padding: 8px 0 0 10px;
+		margin:0;
+display: block;
+ }
+
+ #monmenu ul li a:hover{
+background : url(menu4.gif) 0 -32px;
+padding: 8px 0 0 10px;
+}
+
+#monmenu li {
+list-style-type: none;
+ position: relative;
+ width: 180px;
+ background-color: #E0E0E0;
+ padding:  2px;
+ margin: 0;
+ }
+#monmenu li:hover, #monmenu li.sfhover {
+background-color: #B90101;
+}
+
+#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4 {
+display: block;
+z-index :10;
+}
+</style>
+</head>
+		<body>
+<div id="monmenu" >
+		<ul class="niveau1">
+			<li><a href="#1" title="Link 1" class="fly">Voyages &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ></a>
+				<ul class="niveau2" style="top : 4px;">
+					<li><a href="#">Consulter la liste</a></li>
+					<li><a href="ajout_voyage.php">Ajouter un voyage</a></li>
+					<li><a href="#">Supprimer un voyage</a></li>
+				</ul>
+			</li>
+			<li><a href="#2" title="Link 2">A transporter   ></a>
+				<ul class="niveau2" >
+                    <li><a href="#">Voyageur</a>
+						<ul class="niveau3">
+							<li><a href="#">Consulter la liste</a></li>
+                            <li><a href="ajout_voyageur.php">Ajouter un voyageur</a></li>
+							<li><a href="#">Supprimer un voyageur</a></li>
+						</ul>
+					</li>
+
+                    <li><a href="listeEtudiant.php?list=true">Colis</a>
+						<ul class="niveau3">
+							<li><a href="#">Consulter la liste</a></li>
+                            <li><a href="ajout_colis.php">Ajouter un coli</a></li>
+							<li><a href="#">Supprimer un coli</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#4" title="Link 4">Villes ></a>
+				<ul class="niveau2">
+					<li><li><a href="#">Voir les villes</a></li>
+					<li><li><a href="ajout_ville.php">Ajouter une ville</a></li>
+				</ul>
+			</li>
+			<li><a href="#1">Bus &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -></a>
+				<ul class="niveau2" >
+					<li><a href="#">Voir les bus</a></li>
+					<li><a href="ajout_bus.php">Ajouter un bus</a></li>
+				</ul>
+			</li>
+            <li><a href="#1">Choffeur &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -></a>
+				<ul class="niveau2" >
+					<li><a href="#">Voir la liste</a></li>
+					<li><a href="ajout_chauff.php">Ajouter un choffeur</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
